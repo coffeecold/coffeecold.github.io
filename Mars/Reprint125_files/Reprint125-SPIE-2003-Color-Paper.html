@@ -1,0 +1,1773 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+
+<!-- Mirrored from www.gillevin.com/Mars/Reprint125_files/Reprint125-SPIE-2003-Color-Paper.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Jan 2020 20:45:22 GMT -->
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=Edit-Time-Data href="editdata.html">
+<link rel=OLE-Object-Data href="oledata.html">
+<title>Solving the color calibration problem of Martian lander images</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>kbrailer</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>gmantri</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:LastPrinted>2003-07-25T19:45:00Z</o:LastPrinted>
+  <o:Created>2003-08-15T13:18:00Z</o:Created>
+  <o:LastSaved>2003-08-15T13:18:00Z</o:LastSaved>
+  <o:Pages>13</o:Pages>
+  <o:Words>5559</o:Words>
+  <o:Characters>31689</o:Characters>
+  <o:Company> Spherix Inc.</o:Company><o:Lines>264</o:Lines><o:Paragraphs>63</o:Paragraphs><o:CharactersWithSpaces>38916</o:CharactersWithSpaces><o:Version>9.3821</o:Version></o:DocumentProperties><o:CustomDocumentProperties><o:_AdHocReviewCycleID dt:dt="float">-752749641</o:_AdHocReviewCycleID><o:_EmailSubject dt:dt="string">Solving the color Calibration problem of Martian lander images</o:_EmailSubject><o:_AuthorEmail dt:dt="string">kbrailer@spherix.com</o:_AuthorEmail><o:_AuthorEmailDisplayName dt:dt="string">Brailer, Kathy</o:_AuthorEmailDisplayName></o:CustomDocumentProperties></xml>
+<![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:553679495 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:18.0pt;
+	font-weight:bold;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.0in right 6.0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+span.MsoEndnoteReference
+	{vertical-align:super;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.BalloonText, li.BalloonText, div.BalloonText
+	{mso-style-name:"Balloon Text";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+p.spiehead1, li.spiehead1, div.spiehead1
+	{mso-style-name:spiehead1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.bodtxt, li.bodtxt, div.bodtxt
+	{mso-style-name:bodtxt;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+ /* Page Definitions */
+@page
+	{mso-endnote-separator:url("header.html") es;
+	mso-endnote-continuation-separator:url("header.html") ecs;
+	mso-endnote-position:end-of-section;
+	mso-endnote-numbering-style:arabic;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 63.0pt 1.25in 63.0pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.25in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:8.5in 11.0in;
+	margin:1.0in 63.0pt 1.25in 63.0pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.25in;
+	mso-paper-source:0;}
+div.Section2
+	{page:Section2;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:-2;
+	mso-list-type:simple;
+	mso-list-template-ids:-1879673612;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:*;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l1
+	{mso-list-id:1179274216;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1601305546;}
+@list l1:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:2063358761;
+	mso-list-type:hybrid;
+	mso-list-template-ids:608094514;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:–;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Times New Roman";}
+@list l2:level2
+	{mso-level-start-at:160;
+	mso-level-number-format:bullet;
+	mso-level-text:–;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Times New Roman";}
+@list l0:level1 lfo2
+	{mso-level-numbering:continue;
+	mso-level-text:•;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:0in;
+	margin-left:0in;
+	text-indent:0in;
+	mso-ansi-font-size:18.0pt;
+	font-family:Arial;}
+@list l0:level1 lfo3
+	{mso-level-numbering:continue;
+	mso-level-text:–;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:0in;
+	margin-left:0in;
+	text-indent:0in;
+	mso-ansi-font-size:14.0pt;
+	font-family:Arial;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:16.0pt;mso-bidi-font-size:12.0pt'>Solving the
+color calibration problem of Martian lander images<o:p></o:p></span></b></p>
+
+<p class=spiehead1><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=spiehead1><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-weight:normal'>Ron L. Levin<a style='mso-footnote-id:ftn1' href="#_ftn1"
+name="_ftnref1" title=""><span class=MsoFootnoteReference>*</span></a><sup>a</sup>,
+Gilbert V. Levin<sup>b</sup><o:p></o:p></span></p>
+
+<p class=spiehead1><sup><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-weight:normal'>a</span></sup><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:normal'>46 Washington Avenue, Burlington, MA USA 01803<o:p></o:p></span></p>
+
+<p class=spiehead1><sup><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-weight:normal'>b</span></sup><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;font-weight:normal'>Spherix Incorporated, 12051 Indian Creek Court,
+Beltsville, MD USA 20705<o:p></o:p></span></p>
+
+<p class=spiehead1><span style='font-size:8.0pt;mso-bidi-font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=spiehead1>ABSTRACT</p>
+
+<p class=spiehead1><span style='font-size:10.0pt;font-weight:normal'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+color of published Viking and Pathfinder images varies greatly in hue,
+saturation and chromaticity. True color is important for interpretation of
+physical, chemical, geological and, possibly, biological information about
+Mars.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+weak link in the imaging process for both missions was the reliance on imaging
+color charts reflecting Martian ambient light. While the reflectivity of the
+charts is well known, the spectrum of their illumination on Mars is not.<span
+style="mso-spacerun: yes">  </span>“Calibrated” images are usually reddish,
+attributed to atmospheric dust, but hues range widely because of the great
+uncertainty in the illumination spectrum. Solar black body radiation, the same
+on Mars as on Earth, is minimally modified by the atmosphere of either planet.
+For red dust to change the spectrum significantly, reflected light must exceed
+the transmitted light. Were this the case, shadows would be virtually
+eliminated. Viking images show prominent shadows. Also, Pathfinder’s solar
+cells, activated by blue light, would have failed under the predominately red
+spectrum generally attributed to Mars.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Accordingly,
+no consensus has emerged on the colors of the soil, rocks and sky of Mars. This
+paper proposes two techniques to eliminate color uncertainty from future
+images, and also to allow recalibration of past images: 1.&nbsp;Calibration of
+cameras at night through minimal atmospheric paths using light sources brought
+from Earth, which, used during the day, would permit calculation of red, green
+and blue intensities independent of scene illumination; 2.&nbsp;Use of hyperspectral
+imaging to measure the complete spectrum of each pixel.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>This
+paper includes a calibration of a NASA Viking lander image based on its color
+chart as it appears on Earth.<span style="mso-spacerun: yes">  </span>The more
+realistic Martian colors become far more interesting, showing blue skies, brownish
+soil and rocks, both with yellow, olive, and greenish areas.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=bodtxt><b style='mso-bidi-font-weight:normal'>Keywords:</b> Mars
+color, Mars lander imaging, color image calibration, Raleigh scattering, Mars
+atmospheric dust, Mars environment</p>
+
+<p class=bodtxt><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=spiehead1><span style='font-size:10.0pt'>1.<span style="mso-spacerun:
+yes">  </span>INTRODUCTION AND BACKGROUND<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Three
+spacecrafts have successfully landed on the surface of Mars.<span
+style="mso-spacerun: yes">  </span>There were two Viking landers in 1976 and
+the Pathfinder lander in 1997.<span style="mso-spacerun: yes">  </span>These
+landers retrieved a great deal of valuable information about the Martian
+surface, including a large number of color images.<span style="mso-spacerun:
+yes">  </span>In the 27 years since the Viking spacecraft landed and the 5
+years since Pathfinder landed, there has been no consensus on the calibration
+of these color images.<span style="mso-spacerun: yes">  </span>The coloration
+of the Martian sky and landscape has been the subject of numerous scientific
+papers.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>The first color image
+(12A006/001) of the surface of Mars was taken July 21, 1976, at the Viking 1
+site, one day after the landing.<span style="mso-spacerun: yes"> 
+</span>Immediately displayed on color monitors at JPL, as seen in Figure 1a,
+the landscape awed observers with its resemblance to that of Arizona.<span
+style="mso-spacerun: yes">  </span>Typical desert colorations of soil and rock,
+ranging from umber sand to yellowish-brown and olivine-colored rocks stood out
+clearly under a blue sky. Two hours later, however, the official image was
+changed to the monotone of orange-red (NASA P-17164), Figure 1b, that, with few
+exceptions, has prevailed in NASA-published images of Mars ever since, as
+presented by Mutch <i style='mso-bidi-font-style:normal'>et al.</i><a
+style='mso-endnote-id:edn1' href="#_edn1" name="_ednref1" title=""><span
+class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]>[1]<![endif]></span></span></a>.<span
+style="mso-spacerun: yes">  </span>However, a spectral analysis of color images
+of the Viking 1 site reported<a style='mso-endnote-id:edn2' href="#_edn2"
+name="_ednref2" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]>[2]<![endif]></span></span></a>
+a broader palate.<span style="mso-spacerun: yes">  </span>The paper made the
+first, and perhaps only, reported use of JPL’s Image Processing Laboratory to
+analyze digitally the red, green and blue color channels of the images taken by
+the Viking 1 lander camera.<span style="mso-spacerun: yes">  </span>In addition
+to studying the color images, their RGB components were transformed into
+saturation, hue and intensity components to enhance subtle deviations.<span
+style="mso-spacerun: yes">  </span>When these components were equally amplified
+to produce an equal average sensitivity over the spectral bandpass, the
+resulting “radiometric” (closest possible approach in appearance to a human
+observer) images very closely resembled the first color image
+(12A006/001).<span style="mso-spacerun: yes">  </span>Among the range of
+colors, the paper reported that some of the rocks exhibited greenish patterns
+that apparently changed between images taken 301 sols apart.<span
+style="mso-spacerun: yes">  </span>Radiometric images of lichen-bearing
+terrestrial rocks taken and processed through the same system as were the
+Viking images showed a close resemblance of the lichen colonies to the greenish
+patches on the Mars rocks.<span style="mso-spacerun: yes">  </span>Inclusion in
+the analysis of three near-IR channels available on the Martian images enhanced
+the greenness of the patches that were, to the sensitivity of the method,
+virtually indistinguishable from the lichen colonies on the terrestrial rocks.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>Although the authors of that
+paper drew no conclusion about the biological implication of their findings,
+the mere comparison of the Mars images with lichen produced a major controversy
+with the orange-red Mars majority.<span style="mso-spacerun: yes">  </span>The
+paper was heavily criticized by NASA officials who, upon viewing the images,
+contended they saw no evidence of the features claimed<a style='mso-endnote-id:
+edn3' href="#_edn3" name="_ednref3" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]>[3]<![endif]></span></span></a>.<span
+style="mso-spacerun: yes">  </span>Even when the greenish colored areas were
+confirmed in subsequent reports<a style='mso-endnote-id:edn4' href="#_edn4"
+name="_ednref4" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]>[4]<![endif]></span></span></a><sup>,<a
+style='mso-endnote-id:edn5' href="#_edn5" name="_ednref5" title=""><span
+class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]>[5]<![endif]></span></span></a></sup>,
+those authors took special care to avoid any possible biological implication.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>Levin <i style='mso-bidi-font-style:
+normal'>et al.</i><a style='mso-endnote-id:edn6' href="#_edn6" name="_ednref6"
+title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]>[6]<![endif]></span></span></a> had pointed
+out that the different sun angles under which the images were obtained might
+account for some of the apparent differences between the two.<span
+style="mso-spacerun: yes">  </span>After publication of the paper, its authors
+requested NASA to obtain images of the same area at each Martian-year
+anniversary, when the same sun angle would prevail.<span style="mso-spacerun:
+yes">  </span>This was done, although power limitations forced a narrowing of
+the field taken.<span style="mso-spacerun: yes">  </span>However, before Viking
+1 died, four such images, “repros,” were obtained, spanning some 3 Martian
+years.<span style="mso-spacerun: yes">  </span>The images are published here,
+as Figure 2, for the first time.<span style="mso-spacerun: yes"> 
+</span>Comparisons among them show apparent changes in features over time, not
+only in the near field, where differences on the rocks were first detected,
+but, perhaps, even more surprisingly, in the distant field.<b><o:p></o:p></b></span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><i style='mso-bidi-font-style:normal'><span
+style='font-size:10.0pt;mso-bidi-font-weight:bold'>Mars</span></i><a
+style='mso-endnote-id:edn7' href="#_edn7" name="_ednref7" title=""><span
+class=MsoEndnoteReference><span lang=DA style='font-size:10.0pt;mso-ansi-language:
+DA;mso-bidi-font-weight:bold'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[7]<![endif]></span></span></span></a><span
+style='font-size:10.0pt'>, intended to be, and generally accepted as the
+definitive compendium on Mars, in all of its 1,455 pages plus 18 color plates,
+makes no mention or reference to this issue.<span style="mso-spacerun: yes"> 
+</span>However a telling statement on this important matter is made on the
+cover of the book.<span style="mso-spacerun: yes">  </span>The cover features a
+mosaic constructed, as explained in “About the cover,” from color images taken
+by the Viking 2 lander.<span style="mso-spacerun: yes">  </span>The resulting
+panoramic image presents a surprising, nearly universally bland yellowish-ochre
+landscape and matching sky.<span style="mso-spacerun: yes">  </span>However,
+resisting this strenuous color-suppressing treatment, greenish patches cannot
+be prevented from peaking through on many of the rocks.<span
+style="mso-spacerun: yes">  </span>This paper picks up the issue and proposes
+two methods to obtain accurate color images of the surface and sky of Mars in
+future missions, and demonstrates a method for more accurate recalibration of
+existing images.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>Figure 3 shows a grouping of
+four Viking lander images and four Pathfinder images from official NASA
+websites<a style='mso-endnote-id:edn8' href="#_edn8" name="_ednref8" title=""><span
+class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]>[8]<![endif]></span></span></a>.<span
+style="mso-spacerun: yes">  </span>As seen, the colors of the soil and sky vary
+greatly among the images.<span style="mso-spacerun: yes">  </span>The first
+Viking image has a sky that shows blue, the second image has an orange sky, the
+third a pink sky, and the </span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'>fourth a very red sky.<span style="mso-spacerun: yes">  </span>The
+colorations of the ground vary similarly.<span style="mso-spacerun: yes"> 
+</span>The sky in the Pathfinder images varies between white in the first
+image, gray in the second image, brownish orange in the third, and orange in
+the fourth image.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+first Pathfinder image shows reddish soil with some blue/green patches.<span
+style="mso-spacerun: yes">  </span>The second image shows the Sojourner rover
+with its solar cells appearing grayish rather than its actual blue color.<span
+style="mso-spacerun: yes">  </span>The solar cells on the lander also appear
+devoid of blue in the third image.<span style="mso-spacerun: yes">  </span>The
+Viking lander camera used a scanning mirror, a photodiode, and three colored
+filters to generate red, green, and blue images, which were then merged to form
+the color image.<span style="mso-spacerun: yes">  </span>The Pathfinder lander
+had a charge-coupled device, which took data simultaneously in red, green, and
+blue.<span style="mso-spacerun: yes">  </span>Both landers had onboard color
+calibration charts, which were illuminated by the ambient light on Mars.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=spiehead1><span style='font-size:10.0pt'>2.<span style="mso-spacerun:
+yes">  </span>EXISTING CALIBRATION METHODS<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Viking
+and Pathfinder had two methods of calibration.<span style="mso-spacerun: yes"> 
+</span>The first calibration scheme involved the use of the color charts that
+were visible in some of the Martian images.<span style="mso-spacerun: yes"> 
+</span>The second method was called RADCAM, and it was based on calibration of
+the flight camera on Earth.<span style="mso-spacerun: yes">  </span>These
+cameras took images under controlled lighting conditions and modified them
+until they matched the scene itself.<span style="mso-spacerun: yes"> 
+</span>The calibration algorithm was kept in computer data files, which were,
+and still are, available to calibrate raw Martian images.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>A
+description of these calibration procedures is shown in Figure 4.<span
+style="mso-spacerun: yes">  </span>As shown in the figure, both of these chains
+of calibration are broken at one point.<span style="mso-spacerun: yes"> 
+</span>The color calibration chart method has a gaping hole on the middle link
+where the atmospheric effects on the illumination of the color chart are very
+much in doubt, and are the subject of a great deal of research.<span
+style="mso-spacerun: yes">  </span>The RADCAM chain fails because the stability
+of these solid state devices during the trip to Mars is not known; therefore,
+the performance of the camera on the Martian surface is not necessarily the
+same as it was on Earth.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'>
+<b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]></span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'>Figure 4.<span style="mso-spacerun: yes">  </span>Chains of Calibration</span></b><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'>
+<img border="1" src="image003.gif" width="575" height="367" hspace="3" vspace="3" style="border-style: solid; border-width: 1px; padding: 4px"></p>
+<p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='margin-right:9.0pt;text-align:center'><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+color chart calibration chain (Figure 4) shows that the reflectivity of the
+color calibration chart is very well known.<span style="mso-spacerun: yes"> 
+</span>Were this chart in space, it would be illuminated with a spectrum from
+the Sun that is very well known.<span style="mso-spacerun: yes"> 
+</span>Unfortunately, by the time this solar illumination passes through the
+Martian atmosphere, it is modified in ways that are not currently
+understood.<span style="mso-spacerun: yes">  </span>Many scientific studies
+postulate a large amount of red dust in the atmosphere, modifying both the
+direct and scattered light from the Sun.<span style="mso-spacerun: yes"> 
+</span>This broken link renders the rest of the calibration data difficult to
+use.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>On
+the surface of Mars, excellent raw data were taken from the color calibration
+chart and from the surface itself.<span style="mso-spacerun: yes"> 
+</span>Unfortunately, it is not known what the color chart should look like in
+the illumination from the Sun as it reaches the Martian surface.<span
+style="mso-spacerun: yes">  </span>If the appearance of the color chart on Mars
+were known, then the chain would be complete and we would be able to calibrate
+the other pixels in the Martian image from the surface based on the calibration
+of the color chart.<span style="mso-spacerun: yes">  </span>The unknown appearance
+of this color chart on the surface of Mars prevents a definitive coloration of
+the Martian environment.<span style="mso-spacerun: yes">  </span>This is
+principally responsible for the proliferation of different color calibrations
+and different colorations of the surface of Mars as seen in Figure 3.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+RADCAM calibration chain (Figure 4) appears to have been dismissed by image
+analysts.<span style="mso-spacerun: yes">  </span>This may be because of the
+uncertainty in the stability of the camera and its solid state components
+during the voyage to Mars.<span style="mso-spacerun: yes">  </span>However,
+this seems to be a very reasonable calibration chain.<span style="mso-spacerun:
+yes">  </span>In applying it, a calibration source on Earth is illuminated with
+a light source whose spectrum is measured.<span style="mso-spacerun: yes"> 
+</span>A comparison of the calibrated output with the calibrated target under
+the available calibrated illumination source provides a mathematical formula by
+which raw data from the camera can be converted <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>into
+the desired image.<span style="mso-spacerun: yes">  </span>This calibration, of
+course, can be tested while the camera is on Earth by re-imaging the calibrated
+target or any other known image.<span style="mso-spacerun: yes">  </span>This
+was done in the case of Viking and Pathfinder.<span style="mso-spacerun: yes"> 
+</span>These calibration algorithms have been stored and remain available
+today.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+critical question is the usability of these calibration algorithms on these
+cameras after they have made their voyage to Mars.<span style="mso-spacerun:
+yes">  </span>If the camera were stable, all questions of atmospheric effects
+and illumination would be eliminated since the algorithms have been tested on
+Earth to convert raw data into calibrated images.<span style="mso-spacerun:
+yes">  </span>The calibrated images produced would then be correct, regardless
+of the coloration of Martian objects or the illumination.<span
+style="mso-spacerun: yes">  </span>The absence of such images in publications
+indicates that image analysts doubt that the camera’s response measured before
+launch was still accurate after these cameras reached the Martian surface.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt'>3.<span style="mso-spacerun: yes"> 
+</span>INFORMATION FROM PATHFINDER SOLAR CELL<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>In
+Figure 4, the color calibration chart chain, broken by the unknown atmospheric
+effect on illumination, is shown as partly rebuilt based on evidence from
+Pathfinder solar cells and observations from the Hubble Space Telescope.<span
+style="mso-spacerun: yes">  </span>These dotted links represent lines of
+research that might some day reconnect the color calibration chain and solve
+these coloration issues.<span style="mso-spacerun: yes">  </span>A great deal
+of research on solar cells for space applications has been performed at NASA’s John
+Glenn Research Center in Cleveland<a style='mso-endnote-id:edn9' href="#_edn9"
+name="_ednref9" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]>[9]<![endif]></span></span></a>.<span
+style="mso-spacerun: yes">  </span>One of the differences between the Viking
+and the Pathfinder missions concerns the power source for each lander.<span
+style="mso-spacerun: yes">  </span>The Viking lander was powered by a radio
+thermal generator (RTG), which extracts electrical power from radioactive
+plutonium.<span style="mso-spacerun: yes">  </span>However, partly because of
+safety concerns, the Pathfinder lander was designed to be powered by solar
+cells converting light from the Sun and sky into electrical power.<span
+style="mso-spacerun: yes">  </span>The power production of these solar cells
+was relayed to Earth by telemetry as part of monitoring the health of
+Pathfinder.<span style="mso-spacerun: yes">  </span>This telemetry showed that
+the Pathfinder solar cells produced the amount of power for which they had been
+designed<a style='mso-endnote-id:edn10' href="#_edn10" name="_ednref10" title=""><span
+class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]>[10]<![endif]></span></span></a>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>It
+is well know that the efficiency of solar cells critically depends on the
+spectrum of the light with which they are illuminated.<span
+style="mso-spacerun: yes">  </span>Solar cells are solid state devices.<span
+style="mso-spacerun: yes">  </span>Photons entering the solid state material
+collide with electrons in the conduction band and promote them to the valance
+band in which they become mobile and move toward the collectors.<span
+style="mso-spacerun: yes">  </span>The efficiency of this process depends on
+the likelihood that an electron will absorb enough energy from a photon to be
+promoted across the band gap to the valance band.<span style="mso-spacerun:
+yes">  </span>This probability is zero if the photon energy is less than the
+band gap energy.<span style="mso-spacerun: yes">  </span>This probability of
+electron promotion increases rapidly with increasing photon energy.<span
+style="mso-spacerun: yes">  </span>Red photons have a very low efficiency in
+photovoltaic cells.<span style="mso-spacerun: yes">  </span>The overall
+efficiency of the photo cell is dependent on the fraction of the incident green
+and blue light.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+inefficiency of red photons in photovoltaic cells is mirrored by the
+inefficiency of red photons in exposing ordinary black and white film.<span
+style="mso-spacerun: yes">  </span>For this reason, all darkrooms are
+illuminated by red lights to prevent fogging of film.<span style="mso-spacerun:
+yes">  </span>Color calibration charts in the Viking and Pathfinder lander
+images are heavily red with little, if any, green and blue components.<span
+style="mso-spacerun: yes">  </span>Were the colors reported by these images
+correct, the illumination would result in inadequate power production by the
+solar cells for their assigned tasks.<span style="mso-spacerun: yes"> 
+</span>This constraint is illustrated in Figure 5.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+illumination postulated for the color chart cannot be so tilted toward the red
+that it would be unable to produce the power that was observed in the
+Pathfinder lander.<span style="mso-spacerun: yes">  </span>Figure 6a shows a
+model for atmospheric transmission as seen from the surface of Mars<a
+style='mso-endnote-id:edn11' href="#_edn11" name="_ednref11" title=""><span
+class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]>[11]<![endif]></span></span></a>.<span
+style="mso-spacerun: yes">  </span>This hypothesized model shows an
+atmospherics transmission of only 70% at a wavelength of 4,000 angstroms, which
+is the blue end of the visible spectrum.<span style="mso-spacerun: yes"> 
+</span>In the model, at 5,000 angstroms, which is green, the transmission is
+only 75%.<span style="mso-spacerun: yes">  </span>This means that a quarter or
+more of the blue and green photons are hypothesized to be unavailable to the
+Pathfinder solar cells, which should have a marked effect on their power production
+as compared with the same solar cells in space.<span style="mso-spacerun:
+yes">  </span>This transmission model is based on single scattering of light by
+red dust particles in the Martian atmosphere.<span style="mso-spacerun: yes"> 
+</span>In reality, however, dust storms were observed only two times during
+Viking lander 1’s three Martian years of observation<a style='mso-endnote-id:
+edn12' href="#_edn12" name="_ednref12" title=""><span
+class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]>[12]<![endif]></span></span></a>.<span
+style="mso-spacerun: yes">  </span>During the 2245 sols observed, less than 10%
+exceeded normal<a style='mso-endnote-id:edn13' href="#_edn13" name="_ednref13"
+title=""><span class=MsoEndnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]>[13]<![endif]></span></span></a> atmospheric
+opacity.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+effect of this hypothesized red dust is to absorb blue and green and to scatter
+the red resulting in the predominance of red as is often shown in published
+lander images.<span style="mso-spacerun: yes">  </span>This means that, while
+the transmitted red is being reduced by scattering in the sky, the blue and
+green are being reduced even more strongly by absorption.<span
+style="mso-spacerun: yes">  </span>The illumination of the <o:p></o:p></span></p>
+
+<p align="center">
+
+<b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='mso-special-character:line-break;
+page-break-before:always'>
+</span><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'>Figure 6.<span style="mso-spacerun: yes">  </span>Atmospheric Scattering<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><![if !supportEmptyParas]>&nbsp;<![endif]><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'><o:p><img border="1" src="image006.gif" width="575" height="376"></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:4.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-right:9.0pt;text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>color
+chart is then hypothesized to be red, both from the direct sunlight, as shown
+in the figure and by scattered sunlight in the rest of the sky.<span
+style="mso-spacerun: yes">  </span>This greatly contrasts with the situation on
+Earth, as with any atmosphere of uncolored gases, in which the color of the sky
+is dominated by Rayleigh scattering<a style='mso-endnote-id:edn14'
+href="#_edn14" name="_ednref14" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]>[14]<![endif]></span></span></a>
+and must be blue.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Atmospheric
+molecules, much smaller than a wavelength of light, fall into the Rayleigh
+scattering regime shown in Figure 6b.<span style="mso-spacerun: yes"> 
+</span>Carbon dioxide molecules, like oxygen and nitrogen molecules, are much
+smaller than a wavelength of light.<span style="mso-spacerun: yes"> 
+</span>Even though the density of the Martian atmosphere is only 1% that of
+Earth, this is somewhat compensated by the fact that the atmosphere on Mars
+extends to much higher altitudes due to the lower gravitation of Mars.<span
+style="mso-spacerun: yes">  </span>The physics of Rayleigh scattering shows
+that the intensity of the scattering is proportional to (1/&#955;)</span><sup><span
+style='font-size:10.0pt'>4</span></sup><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt'>.<span style="mso-spacerun: yes">  </span>This
+causes the scattering to be dominated by short wavelengths, which are blue, and
+thus causes the sky, as seen from the surface of a planet, to appear blue.<span
+style="mso-spacerun: yes">  </span>This sky coloring should exist on Mars
+barring significant interference by dust particles.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Even
+though the theoretical models for scattering and transmission of light are
+hypothesized in many of the published images to be very dissimilar on Earth and
+Mars, the results for direct sunlight are amazingly similar.<span
+style="mso-spacerun: yes">  </span>Figure 7 shows a comparison between the
+spectrum of sunlight as measured in space and on Earth, and the spectrum of
+sunlight theoretically predicted to occur on the surface of Mars.<span
+style="mso-spacerun: yes">  </span>The top curve with the diamond markers is
+the spectrum of sunlight measured in space<a style='mso-endnote-id:edn15'
+href="#_edn15" name="_ednref15" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]>[15]<![endif]></span></span></a>.<span
+style="mso-spacerun: yes">  </span>The lower curve with the solid circles is
+the spectrum of direct sunlight measured on Earth when the Sun is directly
+overhead<a style='mso-endnote-id:edn16' href="#_edn16" name="_ednref16" title=""><span
+class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]>[16]<![endif]></span></span></a></span><sup><span
+style='font-size:10.0pt'>,</span></sup><a style='mso-endnote-id:edn17'
+href="#_edn17" name="_ednref17" title=""><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><span style='mso-special-character:
+footnote'><![if !supportFootnotes]>[17]<![endif]></span></span></span></a><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>.<span style="mso-spacerun:
+yes">  </span>The curve with the square markers is the product of the solar
+spectrum in space with the Martian dust single scattering model shown in Figure
+6a.<span style="mso-spacerun: yes">  </span>This transmission model was
+calculated for the Sun being directly overhead.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+Rayleigh scattering of the blue light on Earth is shown in the figure to be
+similar in magnitude to the hypothesized absorption of blue by red dust in the
+atmosphere on Mars.<span style="mso-spacerun: yes">  </span>Over the visible
+wavelengths, 4,000 to 7,000 angstroms, the experimentally measured spectrum on
+Earth and the theoretically hypothesized spectrum on Mars match to within about
+5%.<span style="mso-spacerun: yes">  </span>This should mean that the color
+calibration charts received direct sunlight on Mars quite similar to that
+experienced on Earth.<span style="mso-spacerun: yes">  </span>In most pictures
+of the Martian surface (except during rare dust storms), the direct light seems
+to be much <o:p></o:p></span></p>
+
+<b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Figure 7.<span
+style="mso-spacerun: yes">  </span>Direct Solar Illumination on Earth and Mars
+(Sun Directly Overhead)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'><o:p>
+<img border="1" src="image008.gif" width="415" height="286"></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>stronger
+than the scattered light from the sky, as can be seen from the darkness of the
+shadows of the rocks and of the lander spacecraft.<span style="mso-spacerun:
+yes">  </span>Sand in the shadows of these rocks appears much darker than the
+sand immediately adjacent to it, indicating that scattered light from the sky
+is not very strong.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+Martian dust single scattering model does not appear adequate to explain the
+high red-to-blue ratio of the calibration charts in most published images.<span
+style="mso-spacerun: yes">  </span>However, the similarity of these transmitted
+spectra could explain why the solar cells have performed so well, but their
+performance is incompatible with the redness of the “calibrated” Martian
+images.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=spiehead1><span style='font-size:10.0pt'>4.<span style="mso-spacerun:
+yes">  </span>INFORMATION FROM THE HUBBLE SPACE TELESCOPE<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>There
+exists one other important piece of data concerning the scattered light in the
+Martian sky.<span style="mso-spacerun: yes">  </span>Every 2 years, at Mars and
+Earth conjunction, images of the planet are taken by the Hubble Space Telescope
+as shown in Figure 8.<span style="mso-spacerun: yes">  </span>The resolution of
+the Hubble Space Telescope in sufficient to allow imaging of the planet’s limb
+as seen in Figure 8.<span style="mso-spacerun: yes">  </span>The Hubble Space
+Telescope has onboard spectrometers which are used to study the Doppler red
+shift of distant stars.<span style="mso-spacerun: yes">  </span>These
+spectrometers can be used to calibrate the light reaching the imaging camera on
+the HST.<span style="mso-spacerun: yes">  </span>The spectrometers are capable
+of looking at the same stars as the imaging camera and therefore provide an
+excellent calibration.<span style="mso-spacerun: yes">  </span>A study of these
+images was made by Philip James<a style='mso-endnote-id:edn18' href="#_edn18"
+name="_ednref18" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]>[18]<![endif]></span></span></a>,
+who found that scattering of the Martian atmosphere as seen from Earth is
+predominantly blue.<span style="mso-spacerun: yes">  </span>This adds another
+constraint on the broken calibration link in Figure 4.<span
+style="mso-spacerun: yes">  </span>If the results of the Hubble Space Telescope
+are correct, the Martian sky cannot be as red as shown in many published
+images, and the illumination from the sky cannot be contributing to the red
+dominance of the color calibration charts.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Both
+the Hubble images and the performance of the Pathfinder solar cells argue for a
+much greener and bluer environment than is currently shown in lander
+images.<span style="mso-spacerun: yes">  </span>However, neither of these measurements
+is sufficiently definitive to repair this broken link and allow the production
+of a reliable calibration.<span style="mso-spacerun: yes">  </span>This
+uncertainty cannot be resolved until a Martian lander measures the spectrum of
+solar illumination.<span style="mso-spacerun: yes">  </span>The most important
+question with respect to the color of Mars might be:<span style="mso-spacerun:
+yes">  </span>What does an image of the Martian surface look like if it were
+illuminated by the same light that we are familiar with on Earth?<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>A
+rock formation seen in Earth daylight may not look familiar to us in a very red
+illuminating light.<span style="mso-spacerun: yes">  </span>In order for
+geologists to recognize the minerals that they are familiar with on Earth, it
+might be more appropriate to perform a color calibration that renders the
+geological formations as if they had been in the same illumination that geologists
+are accustomed to seeing on Earth.<span style="mso-spacerun: yes">  </span>In
+this case, the color calibration chart should be set to appear similar to its
+appearance in a sunlit area of Earth.<span style="mso-spacerun: yes"> 
+</span>This may not produce geological images as they would appear to an
+astronaut on Mars, but it will render those geological formations in the same
+coloration that geologists on Earth are accustomed to observing, permitting
+direct comparison of the samples.<span style="mso-spacerun: yes">  </span>To
+this end, a simple illustration is performed on Figure 9 on a published image
+of the Martian surface from Viking.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt'>5.<span style="mso-spacerun: yes"> 
+</span>SIMPLE EARTHLIKE CALIBRATION<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>The center nine panel square
+in Figure 9 depicts the color chart aboard the Viking 1 lander.<span
+style="mso-spacerun: yes">  </span>Two of these charts were aboard the lander,
+as seen in Figure 9.<span style="mso-spacerun: yes">  </span>The right side of
+the figure shows the NASA-published image of the Viking 1 lander scene.<span
+style="mso-spacerun: yes">  </span>The authors attempted to make a linear
+conversion to simultaneously transform the red, green, blue, black and white
+panels into their Earth-measured counterparts.<span style="mso-spacerun: yes"> 
+</span>However, an inconsistency in the color chart as presented in the NASA
+image made this impossible.<span style="mso-spacerun: yes">  </span>Analysis
+showed that the “blue” panel actually contains almost equal parts of blue and
+red, while the white and gray panels are neutral.<span style="mso-spacerun:
+yes">  </span>It is difficult to understand the large presence of red in the
+blue panel under any but the most extreme red illumination.<span
+style="mso-spacerun: yes">  </span>Unknown illumination provides only three
+free parameters in the RGB space, the relative scaling of the three colors.<span
+style="mso-spacerun: yes">  </span>Comparison of two color charts provides 15
+constraints (three each from the red, green, blue, black and white
+panels).<span style="mso-spacerun: yes">  </span>A change in illumination
+should require only three free parameters (the illumination intensities) to
+transform the image to satisfy the 15 constraints.<span style="mso-spacerun:
+yes">  </span>The calibration scheme used here can compensate for any change in
+illumination, and for other changes.<span style="mso-spacerun: yes"> 
+</span>However, application of the method to the NASA image was found to be
+impossible.<span style="mso-spacerun: yes">  </span>This means that the
+official image must have been produced from the raw data by a non-linear
+(potentially non-physical) calibration method that cannot be corrected by
+linear transformation, indicating a degree of subjectivity in the method
+employed by NASA.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>Although the non-linearity of
+the NASA image makes it impossible to transform it accurately, the method was
+applied, thinking it might provide the closest possible approach to a correct
+re-calibration of the NASA image.<span style="mso-spacerun: yes">  </span>In
+July 2003, the authors photographed the color chart on the Viking lander on
+display at the Smithsonian Institution Air and Space Museum, in Washington,
+D.C.<span style="mso-spacerun: yes">  </span>Since fabrication, the Viking
+lander has rarely been exposed to the outdoor sunlight or any other ultraviolet
+source that might accelerate any color change.<span style="mso-spacerun: yes"> 
+</span>A Nikon Digital Coolpix 885 camera was used, with the flash set for auto
+white balance.<span style="mso-spacerun: yes">  </span>A strip of the color
+chart in the digital image is shown as the first color bar on the extreme left
+of Figure 9.<span style="mso-spacerun: yes">  </span>This Earth-like color bar
+was transformed into the numerator matrix shown in the center of the figure.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>The same operation was
+performed on the identical color chart of the NASA-published lander image shown
+on the right side of the figure, yielding the RGB color bar on the right side
+of the figure.<span style="mso-spacerun: yes">  </span>This Martian color bar
+was transformed into the denominator matrix shown in the center of the figure.<span
+style="mso-spacerun: yes">   </span>The ratio of these matrices (Earth / Mars)
+produces a transfer matrix.<span style="mso-spacerun: yes">  </span>The
+transfer matrix transforms the colors of the Martian color chart into those of
+the Earth color chart. The results of this transformation are seen in the color
+bar second from the left of the figure.<span style="mso-spacerun: yes"> 
+</span>The comparison of the color bar derived from the Earth digital
+photograph to that from the Mars NASA-recalibrated color bar shows a close
+match, demonstrating that the transformation did approach the Earth scene.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>All the pixels of the
+NASA-published original image on the right side of Figure 9 were similarly
+transformed into the image with Earth-like illumination as seen on the
+left.<span style="mso-spacerun: yes">  </span>The sky now appears blue, where
+it has been a dark pink before.<span style="mso-spacerun: yes">  </span>The
+U.S. flag becomes more familiar.<span style="mso-spacerun: yes">  </span>The
+soil appears browner and the rocks in the scene show more contrast to the soil,
+more nearly resembling Figure 1a, the color image as first reported from Viking
+1.<span style="mso-spacerun: yes">  </span>The controversial olive-green areas
+reported by Levin <i style='mso-bidi-font-style:normal'>et al.</i><span
+class=MsoEndnoteReference> <a style='mso-endnote-id:edn19' href="#_edn19"
+name="_ednref19" title=""><span style='mso-special-character:footnote'><![if !supportFootnotes]>[19]<![endif]></span></a></span>
+re-appear.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>The calibration provided by
+this scheme may, in fact, be more nearly correct than the ones used to create
+the published images.<span style="mso-spacerun: yes">  </span>There is
+currently insufficient information to make a judgment.<span
+style="mso-spacerun: yes">  </span>Nevertheless, it can be argued that this
+calibration procedure produces an image close to what the Martian surface would
+look like under an illumination similar to that on Earth.<span
+style="mso-spacerun: yes">  </span>Images calibrated in this way might be more
+useful products for geologists and scientists than are the images as currently
+published.<span style="mso-spacerun: yes">  </span>Calibrating the color charts
+as if they were shown in Earth sunlight produces a picture that shows the soil
+and rock formations on Mars in a light that is more familiar to scientists on
+Earth.<span style="mso-spacerun: yes">  </span>One goal might be to identify possible
+Martian igneous and metamorphic rock by comparing the images of these rocks to
+their Earth counterparts when similarly illuminated.<o:p></o:p></span></p>
+
+<p class=spiehead1><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Times New Roman";
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=spiehead1><span style='font-size:10.0pt'>6.<span style="mso-spacerun:
+yes">  </span>ROBUST CALIBRATION METHODS<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>The true color of Mars could
+become known on future missions if the lander cameras were calibrated on Mars
+using light sources brought from the Earth.<span style="mso-spacerun: yes"> 
+</span>Figure 10 illustrates three ways to do this.<span style="mso-spacerun:
+yes">  </span>In this figure, a Martian camera is viewing a color calibration
+chart at night under illumination by the black body spectrum from an
+incandescent light bulb brought from Earth.<span style="mso-spacerun: yes"> 
+</span>Since this chart is very close to the camera, and the light bulb is
+close to the chart, the effects of the atmosphere are negligible.<span
+style="mso-spacerun: yes">  </span>(If there were any c</span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>oncern about the atmosphere,
+the light bulb, color chart, and camera could all be connected by clear plastic
+of known properties rather than to allow any of the light to transit the
+Martian atmosphere.)<span style="mso-spacerun: yes">  </span>The second panel
+in the figure shows a method in which the Martian lander camera observes red,
+green, and blue LED’s that have been calibrated on Earth.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+third panel depicts a calibration procedure based on a tunable dye laser also
+brought from Earth.<span style="mso-spacerun: yes">  </span>If these
+calibrations were performed at night, they would be based purely on light of
+known spectral content.<span style="mso-spacerun: yes">  </span>It would be
+reasonable to expect that the calibration algorithm derived at night would
+still be valid during the next Martian day.<span style="mso-spacerun: yes"> 
+</span>If the stability of this calibration were a concern, the camera could be
+designed to face inward toward the spacecraft during the daytime to look at a
+dark enclosed area with calibrated light sources of known spectral
+properties.<span style="mso-spacerun: yes">  </span>At the desired time, the
+camera could immediately be turned around, look at the ambient scene, and take
+images using the same <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>calibration
+parameters.<span style="mso-spacerun: yes">  </span>Once the lander cameras are
+calibrated using light with known spectral properties, the rendition of these
+images on Earth would no longer be open to question.<span style="mso-spacerun:
+yes">  </span>These calibration procedures could eliminate the broken link in
+the chain shown in Figure 4.<o:p></o:p></span></p>
+
+<p class=spiehead1 align=left style='text-align:left'><span style='font-size:
+10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=spiehead1><span style='font-size:10.0pt'>7.<span style="mso-spacerun:
+yes">  </span>HYPER-SPECTRAL IMAGING <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+coloration of Martian lander images has been so uncertain for such a length of
+time that it is perhaps desirable to use a higher level of technology to ensure
+that the issue is resolved.<span style="mso-spacerun: yes">  </span>In the time
+since the Viking lander, a new technology has been developed called
+hyper-spectral imaging which is able to provide a complete spectrum on every
+pixel in a lander image.<span style="mso-spacerun: yes">  </span>Hyper-spectral
+technology provides the equivalent of running each image pixel through a
+spectrometer.<span style="mso-spacerun: yes">  </span>This concept is
+illustrated on the upper left panel of Figure11, in which a complete color
+spectrum is shown behind each pixel, turning the 2 dimensional image into a 3
+dimensional cube of data.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>A
+hyper-spectral imager provides a spectrum measured in hundreds of wavelengths
+as compared to the broad red, green, and blue wavelengths captured in a
+traditional color image.<span style="mso-spacerun: yes">  </span>This more
+detailed spectrum of each pixel is more easily calibrated and provides
+scientific information beyond that available in color imaging.<span
+style="mso-spacerun: yes">  </span>The upper right portion of Figure 11 shows
+the results of a multi-spectral imager that was onboard the Pathfinder lander<a
+style='mso-endnote-id:edn20' href="#_edn20" name="_ednref20" title=""><span
+class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]>[20]<![endif]></span></span></a>.<span
+style="mso-spacerun: yes">  </span>These graphs show the spectra for several
+different pixels of an image of a rock named Barnacle Bill.<span
+style="mso-spacerun: yes">  </span>The spectrum recorded by Pathfinder covers
+the wavelengths from 4,400 angstroms to 10,000 angstroms, all of the visible
+spectrum except the extreme blue end, and continues well into the infrared
+spectrum.<span style="mso-spacerun: yes">  </span>Since infrared light begins
+around 7,000 angstroms, only half of the data taken by the Pathfinder imager is
+in the visible.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+multi-spectral imager on Pathfinder measured the spectra in only 11
+wavelengths.<span style="mso-spacerun: yes">  </span>Thus, there are only about
+5 spectral measurements of visible light.<span style="mso-spacerun: yes"> 
+</span>This certainly represents an improvement over red, green, and blue color
+imaging which, together with the infrared wavelengths, provides a spectrum
+scientifically valuable for geologists.<span style="mso-spacerun: yes"> 
+</span>This portion of the figure shows the spectral differences among areas
+around Barnacle Bill, portions of Barnacle Bill that are thought to be oxidized
+volcanic cinders, portions of the solid rock face, background soil, and
+unoxidized volcanic rock.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Today’s
+hyper-spectral imaging technology is greatly improved over the multi-spectral
+imaging of Pathfinder.<span style="mso-spacerun: yes">  </span>In many
+hyper-spectral instruments, the visible region of the spectrum is divided into
+more than a hundred spectral bands<a style='mso-endnote-id:edn21' href="#_edn21"
+name="_ednref21" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]>[21]<![endif]></span></span></a>.<span
+style="mso-spacerun: yes">  </span>With hyper-spectral imaging, it is possible
+to imagine recording scientific data that could answer many fundamental
+questions about Mars.<span style="mso-spacerun: yes">  </span>One very
+important and obvious result would be the analysis of pixels that are part of
+an image of the Sun received on Mars.<span style="mso-spacerun: yes"> 
+</span>At the bottom left of Figure 11 is a cartoon of a spectrum of the Sun
+obtained by a hyper-spectral imager.<span style="mso-spacerun: yes"> 
+</span>The blue points represent data received, while the red curve represents
+a theoretical model, such as a 6800</span><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>°</span></span><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt'> K black body spectrum.<span
+style="mso-spacerun: yes">  </span>The spectrum of direct sunlight incident to
+Mars could be accurately measured by this instrument and would solve, once and
+for all, the question of direct illumination, and would greatly help to define
+the appropriate scattering model for the Martian atmosphere.<o:p></o:p></span></p>
+
+<span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>The
+hyper-spectral imager could also produce the spectra from pixels in the sky at
+differing angles from the Sun.<span style="mso-spacerun: yes">  </span>These
+spectra of scattered light could be compared directly against the theoretical
+model of Rayleigh scattering, which predominates on Earth, and to the dust
+single scattering model<a style='mso-endnote-id:edn22' href="#_edn22"
+name="_ednref22" title=""><span class=MsoEndnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]>[22]<![endif]></span></span></a>.<span
+style="mso-spacerun: yes">  </span>At the bottom<span style="mso-spacerun:
+yes">  </span>center of Figure 11 is a cartoon of a hypothetical spectrum from
+a pixel in the sky that could be received from a hyper-spectral imager.<span
+style="mso-spacerun: yes">  </span>The blue points represent received data,
+while the red curve represents one of these theoretical models.<span
+style="mso-spacerun: yes">  </span>The observation of this sky spectrum from
+many different pixels in the sky could be used to define the interaction
+between sunlight and the Martian atmosphere, adding a great deal of information
+about the Martian atmosphere.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Finally,
+the cartoon at the bottom right of Figure 11 shows how spectra could be
+generated by pixels from different rocks in the lander’s environment.<span
+style="mso-spacerun: yes">  </span>Coordinated with the Sun and sky spectra,
+these detailed spectra would have a great deal of geological value.<span
+style="mso-spacerun: yes">  </span>Since the illumination from the Sun and sky
+would be known, the hyper-spectral imager could measure the absolute reflectivity
+of geological formations in the scene.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Hyper-spectral
+imaging could also go a long way toward improving the reproduction of colors in
+the Martian scene.<span style="mso-spacerun: yes">  </span>Once the
+hyper-spectral data were received on Earth, a device could be constructed to
+recreate exactly the observed spectra in an image.<span style="mso-spacerun:
+yes">  </span>Therefore, rather than looking at an image in which the broad
+red, green, and blue bands have been approximately reconstructed, humans could
+look at a scene in which the exact spectrum of each pixel was faithfully
+reproduced on Earth.<span style="mso-spacerun: yes">  </span>Humans would then
+be able to estimate the coloration of the scene by allowing their eyes to view
+the exact visible spectrum that was recorded on Mars.<span style="mso-spacerun:
+yes">  </span>The most important possible find could be spectra that might be
+of biological significance, perhaps an indication of photosynthetic
+microorganisms.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>An
+example of the advanced state of hyper-spatial imaging is the Hyperion
+hyper-spectral imager, which is currently operating on the Earth-observing
+spacecraft EO-1, orbiting the Earth at an altitude of 700 kilometers<a
+style='mso-endnote-id:edn23' href="#_edn23" name="_ednref23" title=""><span
+class=MsoEndnoteReference><span style='mso-special-character:footnote'><![if !supportFootnotes]>[23]<![endif]></span></span></a>.<span
+style="mso-spacerun: yes">  </span>The Hyperion imager weighs 49 kilograms and
+uses an average of 51 watts of power.<span style="mso-spacerun: yes"> 
+</span>This spectrometer has 220 bands of which 30 are in the visible.<span
+style="mso-spacerun: yes">  </span>It has been calibrated to an absolute radiometric
+accuracy of 6%.<span style="mso-spacerun: yes">  </span>A sizeable fraction of
+the 49 kilograms is needed for a telescope which achieves 30 meters resolution
+on the Earth’s surface from a distance of 705 kilometers.<span
+style="mso-spacerun: yes">  </span>This telescope would be unnecessary on a
+lander mission.<span style="mso-spacerun: yes">  </span>A hyper-spectral imager
+could settle the calibration issues, which have plagued Martian lander images
+for 27 years.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>8.<span
+style="mso-spacerun: yes">  </span>SUMMARY<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>No
+consensus has evolved concerning the color calibration of Martian lander
+images.<span style="mso-spacerun: yes">  </span>There is a wide variation in
+the calibration of published images seen in newspapers, scientific articles,
+and on the Internet.<span style="mso-spacerun: yes">  </span>Important basic
+questions have remained unresolved.<span style="mso-spacerun: yes">  </span>The
+color and scattering physics of the sky is still at issue.<span
+style="mso-spacerun: yes">  </span>There is a wide range of uncertainty about
+the coloration of light illuminating the Martian surface.<span
+style="mso-spacerun: yes">  </span>There is wide uncertainty about the coloration
+of the soil and rocks.<span style="mso-spacerun: yes">  </span>Because of these
+unknowns, there is a great uncertainty about the reflectivity of objects on the
+ground and how those geological objects would appear if they were illuminated
+by a known light source.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>In
+an effort to resolve these issues, two broad categories of solutions are
+recommended.<span style="mso-spacerun: yes">  </span>The first is the
+calibration of color cameras completely based on light sources that are brought
+from Earth, making no use of ambient light on Mars.<span style="mso-spacerun:
+yes">  </span>These calibrations could occur either at night or during the day
+in a dark enclosure.<span style="mso-spacerun: yes">  </span>This procedure
+would seal the break in the chain of calibration caused by the unknown
+illumination at the Martian surface.<span style="mso-spacerun: yes"> 
+</span>Once this calibration was achieved, it could then be used on raw data
+taken from the surrounding environment.<span style="mso-spacerun: yes"> 
+</span>Calibrated images produced by this technique would show the actual
+coloration of the Martian surface in the true Martian ambient lighting.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>A
+more technically advanced and more expensive method of determining the absolute
+coloration of the Martian surface would be to use a hyper-spectral imager
+instead of a conventional red, green, and blue color camera.<span
+style="mso-spacerun: yes">  </span>A hyper-spectral imager provides the
+complete spectrum of each pixel leaving no question as to that pixel’s color
+content.<span style="mso-spacerun: yes">  </span>These measured spectra could
+then be faithfully reproduced on Earth.<span style="mso-spacerun: yes"> 
+</span>This would allow the viewer to see a precisely recreated spectrum from
+each pixel in an image.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Using
+these advanced technologies should close the broken links in the chain of
+calibration.<span style="mso-spacerun: yes">  </span>Images could then be
+produced that would be of greater value to geologists, chemists, and biologists
+studying Mars.<span style="mso-spacerun: yes">  </span>These calibrations could
+also be used to understand the reflectivity of the Martian scene and to produce
+another set of images that show how the <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>scene
+would look if illuminated by light on Earth.<span style="mso-spacerun: yes"> 
+</span>The full potential of Martian lander imaging could then be
+realized.<span style="mso-spacerun: yes">  </span>In the meantime, the existing
+images of the Martian surface may be recalibrated to Earth conditions, as shown
+in Figure 9, to provide what is very likely a closer approach to reality than
+presently available.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=spiehead1><span style='font-size:10.0pt'>ACKNOWLEDGMENTS<o:p></o:p></span></p>
+
+<p class=spiehead1 align=left style='text-align:left'><span style='font-size:
+10.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=bodtxt>The authors are indebted to Dr. John Kay, MIT Lincoln
+Laboratory, for innovative suggestions and a critical review of this
+paper.<span style="mso-spacerun: yes">  </span>We gratefully acknowledge the
+superb word processing and library skills of Ms. Katherine Brailer, Executive
+Assistant, Spherix Incorporated, Beltsville, Maryland.</p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>REFERENCES<o:p></o:p></span></b></p>
+
+</div>
+
+<span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always;
+mso-break-type:section-break'>
+</span>
+
+<div class=Section2>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Figure 1.<span
+style="mso-spacerun: yes">  </span>Viking 1 Lander:<span style="mso-spacerun:
+yes">  </span>First Color Photo 12A006<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'><o:p>
+<img border="0" src="image010.gif" width="649" height="315"></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Figure 2.<span
+style="mso-spacerun: yes">  </span>“Repros” of Viking Lander 1 Images Spanning
+3 Martian Years<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>(<u>Note</u>:<span
+style="mso-spacerun: yes">  </span>Hole in foreground of last 3 images resulted
+from a sample taken after Sol 34)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-right:45.0pt;text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'><o:p>
+<img border="0" src="image012.gif" width="401" height="432"></o:p></span></b></p>
+
+<b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Figure 3.<span
+style="mso-spacerun: yes">  </span>Lander Imagery from Current NASA Web Sites <o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'><o:p>
+<img border="0" src="image014.gif" width="528" height="273"></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='tab-stops:center 1.5in left 261.0pt' align="center"><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'>
+<b
+style='mso-bidi-font-weight:normal; font-size:10.0pt; mso-bidi-font-size:12.0pt'>
+<o:p>
+<span style='mso-bidi-font-weight:normal; font-size:10.0pt; mso-bidi-font-size:12.0pt'>                  </span>Figure 5.<span
+style="mso-bidi-font-weight:normal; font-size:10.0pt; mso-bidi-font-size:12.0pt">  </span>Conflicting Hypotheses<span
+style='mso-bidi-font-weight:normal; font-size:10.0pt; mso-bidi-font-size:12.0pt'>                                     </span>Figure
+8.<span style="mso-bidi-font-weight:normal; font-size:10.0pt; mso-bidi-font-size:12.0pt">  </span>Mars Imaged by HST During Opposition</o:p></b><o:p></o:p></span></p>
+
+<p class=MsoNormal align="center"><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>
+<o:p>
+<img border="0" src="image018.gif" width="317" height="206"></o:p><o:p><span style="mso-bidi-font-weight: normal"><img border="0" src="image016.gif" width="200" height="207"></span></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Figure
+10.<span style="mso-spacerun: yes">  </span>Methods for Nighttime Calibration
+at Night Using Known Light Sources<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'><o:p>
+<img border="0" src="image020.gif" width="475" height="235"></o:p></span></b></p>
+
+<b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:"Times New Roman";mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'><br clear=all style='page-break-before:always'>
+</span></b>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Figure 9.<span
+style="mso-spacerun: yes">  </span>Calibration Scheme<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'><o:p>
+<img border="0" src="image022.gif" width="643" height="493"></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Figure
+11.<span style="mso-spacerun: yes">  </span>Hyper-Spectral Imaging<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;mso-bidi-font-size:
+12.0pt'><o:p>
+<img border="0" src="image024.gif" width="429" height="300"></o:p></span></b></p>
+
+</div>
+
+<div style='mso-element:footnote-list'><![if !supportFootnotes]><br clear=all>
+
+<hr align=left size=1 width="33%">
+
+<![endif]>
+
+<div style='mso-element:footnote' id=ftn1>
+
+<p class=MsoFootnoteText><a style='mso-footnote-id:ftn1' href="#_ftnref1"
+name="_ftn1" title=""><span class=MsoFootnoteReference>*</span></a>Currently
+working at MIT Lincoln Lab:<span style="mso-spacerun: yes">  </span>e-mail
+ronlevin@comcast.net; phone781-272-1497; fax 781-272-1497.</p>
+
+</div>
+
+</div>
+
+<div style='mso-element:endnote-list'><![if !supportEndnotes]><br clear=all>
+
+<hr align=left size=1 width="33%">
+
+<![endif]>
+
+<div style='mso-element:endnote' id=edn1>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn1' href="#_ednref1" name="_edn1" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[1]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>     </span>Mutch, T.S., A.B. Binder, F.O. Huck, E.C.
+Leventhal, S. Liebes, Jr., E.C. Morris, W.R. Patterson, J.B. Pollack, C. Sagan,
+and G.R. Taylor, <i style='mso-bidi-font-style:normal'>Science,</i> <b
+style='mso-bidi-font-weight:normal'>193</b>, 791, 1976.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn2>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn2' href="#_ednref2" name="_edn2" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[2]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>     </span>Levin, G.V., P.A. Straat, and W.D. Benton,
+“Color and Feature Changes at Mars Viking Lander Site,” <i style='mso-bidi-font-style:
+normal'>J. Theor. Biol.</i>, <b><span style='mso-bidi-font-style:italic'>75</span></b>,
+381-390, 1978.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn3>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn3' href="#_ednref3" name="_edn3" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[3]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>     </span>Levin, G., personal observation, as
+reprinted in B.E. DiGregorio, <i style='mso-bidi-font-style:normal'>Mars: The
+Living Planet</i>, Frog Ltd. c/o North Atlantic Books, Berkeley, CA, p. 194,
+1997.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn4>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn4' href="#_ednref4" name="_edn4" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[4]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>     </span>Strickland, E., “Color Enhanced Viking
+Lander Images of Mars,” abstract, Second International Colloquium on Mars, NASA
+Pub. 2072, 1979.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn5>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn5' href="#_ednref5" name="_edn5" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[5]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>     </span>Strickland, E., “Soil Stratigraphy and Rock
+Coatings Observed in Color Enhanced Viking Lander Images,” <i style='mso-bidi-font-style:
+normal'>Lunar and Plan. Sci.</i>, 10, <b>3, </b>1192-1194, 1979.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn6>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn6' href="#_ednref6" name="_edn6" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[6]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>     </span>Op Cit 2.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn7>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn7' href="#_ednref7" name="_edn7" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[7]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>     </span>Kieffer, H.H., B.M. Jakosky, C.W. Snyder,
+and M.S. Matthews, Eds., <i style='mso-bidi-font-style:normal'>Mars</i>, <span
+style='mso-bidi-font-style:italic'>U. Ariz. Press</span>, Tucson and London,
+1992.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn8>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn8' href="#_ednref8" name="_edn8" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[8]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>     </span>“NSSDC Image Collection, Mars,” <a
+href="http://nssdc.gsfc.nasa.gov/imgcat/html/group_page/MR.html">http://nssdc.gsfc.nasa.gov/imgcat/html/group_page/MR.html</a>
+and “Mars Pathfinder Images,” <a
+href="http://nssdc.gsfc.nasa.gov/planetary/marspath_images.html">http://nssdc.gsfc.nasa.gov/planetary/marspath_images.html</a>.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn9>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn9' href="#_ednref9" name="_edn9" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[9]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>     </span>G.A. Landis, “Solar Cell Selection for Mars,”
+<i style='mso-bidi-font-style:normal'>Proceedings of the 2<sup>nd</sup> World
+Conference on Photovoltaic Energy Conversion III</i>, 3986, 1998.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn10>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn10' href="#_ednref10" name="_edn10" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[10]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>   </span>Appelbaum, J., T. Segalov, P. Jenkins, G.A.
+Landis, and C. Baraona, “Verification of the Mars Solar Radiation Model Based
+on Mars Pathfinder Data,” <i style='mso-bidi-font-style:normal'>Proceedings of
+the 26<sup>th</sup> IEEE Photovoltaic Specialists Conference</i>, 103, 1997.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn11>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn11' href="#_ednref11" name="_edn11" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[11]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>   </span>Ockert-Bell III, M., J. Pollack, C. McKay and
+F. Forget, “Absorption and Scattering Properties of the Martian Dust in the
+Solar Wavelengths,” <i style='mso-bidi-font-style:normal'>J. Geophys. Res.,</i>
+<b style='mso-bidi-font-weight:normal'>102</b>, No. 104, 9039-9050, 1997.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn12>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn12' href="#_ednref12" name="_edn12" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[12]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>   </span>Williams, S.H., “The Winds of Mars: Aeolian
+Activity and Landforms,” <a
+href="http://www.lpi.usra.edu/publications/slidesets/winds.html">www.lpi.usra.edu/publications/slidesets/winds.html</a>.
+</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn13>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.25in;
+margin-bottom:.0001pt;text-indent:-.25in'><a style='mso-endnote-id:edn13'
+href="#_ednref13" name="_edn13" title=""><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;vertical-align:baseline;vertical-align:baseline'><span
+style='mso-special-character:footnote'><![if !supportFootnotes]>[13]<![endif]></span></span></span></a><span
+style='font-size:10.0pt'>.<span style='mso-tab-count:1'>   </span><strong><span
+style='font-weight:normal'>Tillman, J.E., N.C. Johnson, P. Guttorp and D.B. Percival,
+“The Martian Annual Atmospheric Pressure Cycle: Years Without Great Dust
+Storms,” special edition, <i style='mso-bidi-font-style:normal'>J. Geophys.
+Res.,</i> </span>84</strong><strong><span style='font-weight:normal'>,
+10,963-10,971, 1993.</span></strong></span></p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn14>
+
+<h1 style='margin-left:.25in;text-indent:-.25in'><a style='mso-endnote-id:edn14'
+href="#_ednref14" name="_edn14" title=""><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;mso-bidi-font-size:24.0pt;font-weight:normal;
+vertical-align:baseline;vertical-align:baseline'><span style='mso-special-character:
+footnote'><![if !supportFootnotes]>[14]<![endif]></span></span></span></a><span
+style='font-size:10.0pt;mso-bidi-font-size:24.0pt;font-weight:normal'>.<span
+style='mso-tab-count:1'>   </span>Kissell, L., “RTAB: the Rayleigh scattering
+database,” RTAB data files, <a href="ftp://www-phys.llnl.gov/pub/rayleigh/RTAB">ftp://www-phys.llnl.gov/pub/rayleigh/RTAB</a>.<o:p></o:p></span></h1>
+
+</div>
+
+<div style='mso-element:endnote' id=edn15>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn15' href="#_ednref15" name="_edn15" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[15]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>   </span>Aller, L.H., <i style='mso-bidi-font-style:
+normal'>Atoms, Stars, and Nebulae</i>, Harvard University Press, 3<sup>rd</sup>
+Ed., Cambridge, p. 62, 1991.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn16>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn16' href="#_ednref16" name="_edn16" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[16]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>   </span>Withrow, R.B. and A.P. Withrow, <i
+style='mso-bidi-font-style:normal'>Radiation Biology, </i><b style='mso-bidi-font-weight:
+normal'>3</b><i style='mso-bidi-font-style:normal'>,</i> Chapter 3,
+McGraw-Hill, New York, 1965.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn17>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn17' href="#_ednref17" name="_edn17" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[17]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>   </span>Grossweiner, L.I., “Photophysics,” <i
+style='mso-bidi-font-style:normal'>The Science of Photobiology</i>, 2<sup>nd</sup>
+ed., Plenum Press, New York, 1989.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn18>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn18' href="#_ednref18" name="_edn18" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[18]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>   </span>James, P.B., M.J. Wolff, R.T. Clancy, S.W.
+Lee, J.F. Bell, III, and L.J. Martin, “Synoptic Monitoring of Mars by HST:
+1996-1997 Observations,” <em>Bull. Amer. Aston. Soc.</em>, <strong>28</strong>,1069,
+1996.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn19>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn19' href="#_ednref19" name="_edn19" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[19]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>   </span>Op cit 2.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn20>
+
+<h1 style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.25in;
+margin-bottom:.0001pt;text-indent:-.25in'><a style='mso-endnote-id:edn20'
+href="#_ednref20" name="_edn20" title=""><span class=MsoEndnoteReference><span
+style='font-size:10.0pt;font-weight:normal;vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[20]<![endif]></span></span></span></a><span
+style='font-size:10.0pt;font-weight:normal'>.<span style='mso-tab-count:1'>   </span>“<span
+style='mso-bidi-font-style:italic'>Mars Pathfinder </span>Geological data:
+First analysis of Barnacle Bill rock,” <a
+href="http://www.xtec.es/recursos/astronom/mars/mpf/litoebb.htm">http://www.xtec.es/recursos/astronom/mars/mpf/litoebb.htm</a>.<o:p></o:p></span></h1>
+
+</div>
+
+<div style='mso-element:endnote' id=edn21>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn21' href="#_ednref21" name="_edn21" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[21]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>   </span>“Hyperion instrument,” <a
+href="http://eo1.gsfc.nasa.gov/technology/hyperion.html">http://eo1.gsfc.nasa.gov/technology/hyperion.html</a>.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn22>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn22' href="#_ednref22" name="_edn22" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[22]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>   </span>Op Cit 11.</p>
+
+</div>
+
+<div style='mso-element:endnote' id=edn23>
+
+<p class=MsoEndnoteText style='margin-left:.25in;text-indent:-.25in'><a
+style='mso-endnote-id:edn23' href="#_ednref23" name="_edn23" title=""><span
+class=MsoEndnoteReference><span style='vertical-align:baseline;vertical-align:
+baseline'><span style='mso-special-character:footnote'><![if !supportFootnotes]>[23]<![endif]></span></span></span></a>.<span
+style='mso-tab-count:1'>   </span>Op Cit 21.</p>
+
+</div>
+
+</div>
+
+</body>
+
+
+<!-- Mirrored from www.gillevin.com/Mars/Reprint125_files/Reprint125-SPIE-2003-Color-Paper.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Jan 2020 20:45:25 GMT -->
+</html>
